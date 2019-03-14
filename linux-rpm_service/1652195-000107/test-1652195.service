@@ -1,0 +1,14 @@
+[Unit]
+Description=test-1652195
+After=
+
+[Service]
+Type=forking
+PIDFile=
+ExecStart=/usr/sbin/test-1652195 start
+ExexStop=/usr/sbin/test-1652195 stop
+ExexReload=/usr/sbin/test-1652195 restart
+PrivateTmp=true;
+
+[Install]
+WantedBy=mulit-user.target
